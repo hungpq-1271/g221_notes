@@ -21,7 +21,7 @@ const StyledButton = styled(Button)`
 
 export default function Navigator() {
   return (
-    <AppBar>
+    <StyledAppBar>
       <StyledToolbar>
         <NonStyleLink to={routes.home}>
           <StyledButton>
@@ -41,6 +41,6 @@ export default function Navigator() {
           </NonStyleLink>
         </ButtonsWrapper>
       </StyledToolbar>
-    </AppBar>
+    </StyledAppBar>
   )
 }

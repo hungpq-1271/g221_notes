@@ -1,0 +1,10 @@
+.fc-toolbar {
+  flex-flow: row wrap-reverse;
+  justify-content: space-around;
+}
+.fc-left, .fc-center, .fc-right {
+  padding: 10px 0;
+}
+.fc-event-container {
+  text-align: center;
+}

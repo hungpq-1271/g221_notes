@@ -14,6 +14,7 @@ export default function App() {
         <DefaultLayout exact path={routes.home} component={HomePage} />
         <DefaultLayout path={routes.login} component={LoginPage} />
         <DefaultLayout path={routes.signup} component={SignupPage} />
+        <DefaultLayout path={routes.task} component={TasksPage} />
       </Switch>
     </BrowserRouter>
   )
