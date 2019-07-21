@@ -1,86 +1,82 @@
-import React, { Component } from 'react'
-import ReactDOM from "react-dom";
-import styled from 'styled-components'
-import FullCalendar from "@fullcalendar/react";
-import dayGridPlugin from "@fullcalendar/daygrid";
-import bootstrapPlugin from "@fullcalendar/bootstrap";
-import interactionPlugin from "@fullcalendar/interaction";
-import MediaQuery from 'react-responsive'
+import React, { Component } from 'react';
+import mobiscroll from "@mobiscroll/react";
+import TasksClick from "./components/TasksClick";
 
-import "@fullcalendar/core/main.css";
-import "@fullcalendar/daygrid/main.css";
-import "@fullcalendar/bootstrap/main.css";
-import "./dashbroad.css";
+import "@mobiscroll/react/dist/css/mobiscroll.min.css";
+
+mobiscroll.settings = {
+  theme: 'ios'
+};
 
 export default class DashBroad extends Component {
   constructor(props) {
     super(props);
+    
+    mobiscroll.util.getJson('https://trial.mobiscroll.com/events/', (events) => {
+        this.setState({ myEvents: events});
+    }, 'jsonp');
 
-    const events = [
-        {
-            title: '5',
-            description: 'Tasks',
-            start: '2019-07-01',
-            color: 'red',
-        },
-        {
-            title: '10',
-            description: 'Tasks',
-            start: '2019-07-01',
-        },
-        {
-            title: '10',
-            description: 'Tasks',
-            start: '2019-07-19T16:00:00',
-        },
-    ];
     this.state = {
-      events,
+      view: 'month',
+      myEvents: [] ,
+      calView: {
+        calendar: { type: 'month', labels: true },
+      },
+      height: 490
     };
   }
   
-  render() {
-    const events = this.state
+  changeView = (event) => {
+    var view;
+    var calHeight;
+    switch (event.target.value) {
+      case 'month':
+        view = {
+          calendar: { type: 'month', labels: true },
+        };
+        calHeight = 490
+        break;
+      case 'week':
+        view = {
+          calendar: { type: 'week' },
+          eventList: { type: 'day' }
+        };
+        calHeight = 70
+        break;
+    }
+  
+    this.setState({
+      view: event.target.value,
+      calView: view,
+      height: calHeight,
+    });
+  }
+  
+  render () {
     return (
-      <div id="calendar" className="container" ref="calendar">
-        <FullCalendar
-          selectable={true}
-          defaultView="dayGridMonth"
-          height={650}
-          header={{
-            left: 'prev,next today',
-            center: 'title',
-            right: 'dayGridMonth,dayGridWeek'
-          }}
-          prev="fa-chevron-left"
-          next="fa-chevron-right"
-          plugins={[interactionPlugin, dayGridPlugin, bootstrapPlugin]}
-          themeSystem="bootstrap"
-          weekends={true}
-          dateClick={this.DateClick}
-          displayEventTime={true}
-          timeZone="UTC"
-          events= {events}
-          eventRender={this.EventDetail}
-        />
+      <div id="content">
+        <div className="md-switching-view-cont">
+          <mobiscroll.Form>
+            <mobiscroll.Segmented value="month" name="view" checked={this.state.view === 'month'} onChange={this.changeView}>
+              Month
+            </mobiscroll.Segmented>
+            <mobiscroll.Segmented value="week" name="view" checked={this.state.view === 'week'} onChange={this.changeView}>
+              Week
+            </mobiscroll.Segmented>
+          </mobiscroll.Form>
+          <div className="md-switching-view-cal-cont">
+            <mobiscroll.Eventcalendar
+              ref="calendar"
+              display="inline"
+              view={this.state.calView}
+              data={this.state.myEvents}
+              marked={this.state.myEvents}
+              onEventSelect={TasksClick}
+              calendarHeight={this.state.height}
+            />
+          </div>
+        </div>
       </div>
     );
-  }
-  EventDetail = ({ event, el }) => {
-    const content = (
-      <div>
-        <MediaQuery maxDeviceWidth={540}>
-          {event.title}
-        </MediaQuery>
-        <MediaQuery minDeviceWidth={540}>
-          {event.title} {event.extendedProps.description}
-        </MediaQuery>
-      </div>
-    );
-    ReactDOM.render(content, el);
-    return el;
-  };
-  DateClick = (info) => {
-    console.log('Clicked on: ' + info.dateStr);
-  }
+  }    
 }
