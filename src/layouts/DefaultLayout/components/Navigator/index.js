@@ -4,24 +4,42 @@ import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
 import Button from '@material-ui/core/Button'
 
+import NonStyleLink from 'components/NonStyleLink'
+import routes from 'routes'
+
 const StyledToolbar = styled(Toolbar)`
-  display: grid;
-  grid-template-columns: 2fr 8fr 2fr;
+  display: flex;
+  justify-content: space-between;
 `
 
-const RightButtons = styled.div`
-  grid-column-start: 3;
+const ButtonsWrapper = styled.div`
+`
+
+const StyledButton = styled(Button)`
+  color: white;
 `
 
 export default function Navigator() {
   return (
     <AppBar>
       <StyledToolbar>
-        <Button color="inherit">Home</Button>
-        <RightButtons>
-          <Button color="inherit">Login</Button>
-          <Button color="inherit">Signup</Button>
-        </RightButtons>
+        <NonStyleLink to={routes.home}>
+          <StyledButton>
+            Home
+          </StyledButton>
+        </NonStyleLink>
+        <ButtonsWrapper>
+          <NonStyleLink to={routes.login}>
+            <StyledButton>
+              Login
+            </StyledButton>
+          </NonStyleLink>
+          <NonStyleLink to={routes.signup}>
+            <StyledButton>
+              Signup
+            </StyledButton>
+          </NonStyleLink>
+        </ButtonsWrapper>
       </StyledToolbar>
     </AppBar>
   )
