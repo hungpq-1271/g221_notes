@@ -2,64 +2,79 @@
 
 exports[`<App> should render and match the snapshot 1`] = `
 <div
-  class="sc-htpNat iscjEy"
+  class="sc-ifAKCX eidENd"
 >
   <header
     class="MuiPaper-root MuiPaper-elevation4 MuiAppBar-root MuiAppBar-positionFixed MuiAppBar-colorPrimary mui-fixed"
   >
     <div
-      class="MuiToolbar-root MuiToolbar-regular sc-bdVaJa cNOkSB MuiToolbar-gutters"
+      class="MuiToolbar-root MuiToolbar-regular sc-bwzfXH MKmUa MuiToolbar-gutters"
     >
-      <button
-        class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-colorInherit"
-        tabindex="0"
-        type="button"
+      <a
+        class="sc-bdVaJa fxslth"
+        href="/"
       >
-        <span
-          class="MuiButton-label"
+        <button
+          class="MuiButtonBase-root MuiButton-root sc-bxivhb jxkoxB MuiButton-text"
+          tabindex="0"
+          type="button"
         >
-          Home
-        </span>
-        <span
-          class="MuiTouchRipple-root"
-        />
-      </button>
+          <span
+            class="MuiButton-label"
+          >
+            Home
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+      </a>
       <div
-        class="sc-bwzfXH cOHpcK"
+        class="sc-htpNat hHtpcc"
       >
-        <button
-          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-colorInherit"
-          tabindex="0"
-          type="button"
+        <a
+          class="sc-bdVaJa fxslth"
+          href="/login"
         >
-          <span
-            class="MuiButton-label"
+          <button
+            class="MuiButtonBase-root MuiButton-root sc-bxivhb jxkoxB MuiButton-text"
+            tabindex="0"
+            type="button"
           >
-            Login
-          </span>
-          <span
-            class="MuiTouchRipple-root"
-          />
-        </button>
-        <button
-          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-colorInherit"
-          tabindex="0"
-          type="button"
+            <span
+              class="MuiButton-label"
+            >
+              Login
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </a>
+        <a
+          class="sc-bdVaJa fxslth"
+          href="/signup"
         >
-          <span
-            class="MuiButton-label"
+          <button
+            class="MuiButtonBase-root MuiButton-root sc-bxivhb jxkoxB MuiButton-text"
+            tabindex="0"
+            type="button"
           >
-            Signup
-          </span>
-          <span
-            class="MuiTouchRipple-root"
-          />
-        </button>
+            <span
+              class="MuiButton-label"
+            >
+              Signup
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </a>
       </div>
     </div>
   </header>
   <div
-    class="MuiContainer-root sc-bxivhb VOfcy MuiContainer-maxWidthSm"
+    class="MuiContainer-root sc-EHOje iAzZGW MuiContainer-maxWidthSm"
   >
     <p>
       Homepage
