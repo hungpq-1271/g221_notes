@@ -5,7 +5,6 @@ import routes from 'routes'
 import DefaultLayout from 'layouts/DefaultLayout'
 import HomePage from 'containers/HomePage'
 import LoginPage from 'containers/LoginPage'
-import DummyPage from 'containers/DummyPage'
 import SignupPage from 'containers/SignupPage'
 
 export default function App() {
@@ -14,7 +13,6 @@ export default function App() {
       <Switch>
         <DefaultLayout exact path={routes.home} component={HomePage} />
         <DefaultLayout path={routes.login} component={LoginPage} />
-        <DefaultLayout path={routes.dummy} component={DummyPage} />
         <DefaultLayout path={routes.signup} component={SignupPage} />
       </Switch>
     </BrowserRouter>

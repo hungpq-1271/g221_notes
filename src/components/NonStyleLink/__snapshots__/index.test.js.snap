@@ -1,7 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<NonStyleLink /> should render and match the snapshot 1`] = `
+.c0 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
 <a
-  class="sc-bdVaJa fxslth"
+  class="c0"
 />
 `;
