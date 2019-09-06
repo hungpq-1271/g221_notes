@@ -6,6 +6,7 @@ import DefaultLayout from 'layouts/DefaultLayout'
 import HomePage from 'containers/HomePage'
 import LoginPage from 'containers/LoginPage'
 import SignupPage from 'containers/SignupPage'
+import TasksPage from 'containers/TasksPage'
 
 export default function App() {
   return (

@@ -26,7 +26,7 @@ export default function DefaultLayout({ component: Component, ...restProps }) {
       return (
         <Wrapper>
           <Navigator />
-          <StyledContainer>
+          <StyledContainer maxWidth="lg">
             <Component {...props} {...restProps} />
           </StyledContainer>
         </Wrapper>

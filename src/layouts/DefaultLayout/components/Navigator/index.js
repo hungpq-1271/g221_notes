@@ -19,6 +19,14 @@ const StyledButton = styled(Button)`
   color: white;
 `
 
+const StyledAppBar = styled(AppBar)`
+  background-color: #007bff;
+`
+
+const RightButtons = styled.div`
+  grid-column-start: 3;
+`
+
 export default function Navigator() {
   return (
     <StyledAppBar>
