@@ -1,4 +1,5 @@
 import React from 'react'
+import Container from '@material-ui/core/Container'
 import TextField from '@material-ui/core/TextField'
 import Link from '@material-ui/core/Link'
 
@@ -9,7 +10,7 @@ import Form from 'components/auth/Form'
 
 export default function View({ onChange, onSignup }) {
   return (
-    <>
+    <Container maxWidth="sm">
       <GithubButton label="Signup with github" />
       <Separator />
       <Form
@@ -38,6 +39,6 @@ export default function View({ onChange, onSignup }) {
           onChange={onChange}
         /><hr />
       </Form>
-    </>
+    </Container>
   )
 }

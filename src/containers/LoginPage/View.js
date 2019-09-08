@@ -1,7 +1,7 @@
 import React from 'react'
+import Container from '@material-ui/core/Container'
 import TextField from '@material-ui/core/TextField'
 import Link from '@material-ui/core/Link'
-
 import routes from 'routes'
 import GithubButton from 'components/auth/GithubButton'
 import Separator from 'components/auth/Separator'
@@ -9,7 +9,7 @@ import Form from 'components/auth/Form'
 
 export default function View({ onChange, onLogin }) {
   return (
-    <>
+    <Container maxWidth="sm">
       <GithubButton label="Login with Github" />
       <Separator />
       <Form
@@ -31,6 +31,6 @@ export default function View({ onChange, onLogin }) {
           onChange={onChange}
         /><hr />
       </Form>
-    </>
+    </Container>
   )
 }
