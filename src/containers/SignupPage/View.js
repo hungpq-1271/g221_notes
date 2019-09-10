@@ -7,7 +7,7 @@ import GithubButton from 'components/auth/GithubButton'
 import Separator from 'components/auth/Separator'
 import Form from 'components/auth/Form'
 
-export default function View({ onInputChange, onSignup }) {
+export default function View({ onChange, onSignup }) {
   return (
     <>
       <GithubButton label="Signup with github" />
@@ -21,21 +21,21 @@ export default function View({ onInputChange, onSignup }) {
           variant="outlined"
           label="Email Address"
           fullWidth
-          onChange={onInputChange}
+          onChange={onChange}
         /><hr />
         <TextField
           variant="outlined"
           type="password"
           label="Password"
           fullWidth
-          onChange={onInputChange}
+          onChange={onChange}
         /><hr />
         <TextField
           variant="outlined"
           type="password"
           label="Password Confirmation"
           fullWidth
-          onChange={onInputChange}
+          onChange={onChange}
         /><hr />
       </Form>
     </>

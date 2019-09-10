@@ -31,8 +31,9 @@ export default class LoginPage extends Component {
   }
 
   render() {
-    return (
-      <View onChange={this.handleInputChange} handleLogin={this.handleLogin} />
-    )
+    return <View
+      onChange={this.handleInputChange}
+      onLogin={this.handleLogin}
+    />
   }
 }
