@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<LoginPage /> should render and match the snapshot 1`] = `
+exports[`<GithubButton /> should render and match the snapshot 1`] = `
 .c0 {
   margin: auto;
   margin-top: 2em;
@@ -34,7 +34,6 @@ exports[`<LoginPage /> should render and match the snapshot 1`] = `
       />
     </svg>
      
-    Login with Github
   </span>
   <span
     class="MuiTouchRipple-root"

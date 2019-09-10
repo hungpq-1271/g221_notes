@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Form /> should render and match the snapshot 1`] = `
+.c0 {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.c1 {
+  width: 100%;
+}
+
+<div
+  class="MuiFormControl-root c0"
+>
+  <div
+    class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-8"
+    >
+      <p
+        class="MuiTypography-root MuiTypography-body1"
+      />
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4"
+    >
+      <button
+        class="MuiButtonBase-root MuiButton-root c1 MuiButton-outlined"
+        tabindex="0"
+        type="submit"
+      >
+        <span
+          class="MuiButton-label"
+        />
+        <span
+          class="MuiTouchRipple-root"
+        />
+      </button>
+    </div>
+  </div>
+</div>
+`;

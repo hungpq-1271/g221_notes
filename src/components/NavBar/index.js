@@ -20,14 +20,14 @@ function NavBar() {
     <div className="NavBar">
       <StyledNavBar>
         <Toolbar>
-          <TypoGraphy variant="title">
-            <h4>G221 Notes&Tasks</h4>
+          <TypoGraphy variant="h4">
+            G221 Notes&Tasks
           </TypoGraphy>
           <LoginButton>Login</LoginButton>
         </Toolbar>
       </StyledNavBar>
     </div>
-  );
+  )
 }
 
 export default NavBar

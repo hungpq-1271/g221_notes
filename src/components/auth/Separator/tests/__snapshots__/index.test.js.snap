@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Separator /> should render and match the snapshot 1`] = `
+.c0 {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #818078;
+  opacity: .5;
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+}
+
+.c1 {
+  background: #fff;
+  padding: 0 10px;
+  font-family: Roboto;
+  color: rgba(0,0,0,0.87);
+}
+
+<h4
+  class="c0"
+>
+  <span
+    class="c1"
+  >
+    OR
+  </span>
+</h4>
+`;
