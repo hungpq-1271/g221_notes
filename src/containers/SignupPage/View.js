@@ -7,15 +7,15 @@ import GithubButton from 'components/auth/GithubButton'
 import Separator from 'components/auth/Separator'
 import Form from 'components/auth/Form'
 
-export default function View({onInputChange, onLogin}) {
+export default function View({ onInputChange, onSignup }) {
   return (
     <>
-      <GithubButton label="Login with Github" />
+      <GithubButton label="Signup with github" />
       <Separator />
       <Form
-        submitButtonLabel="Log in"
-        extraLinkEl={<Link href={routes.signup}>Create new account</Link>}
-        onSubmit={onLogin}
+        submitButtonLabel="Sign up"
+        extraLinkEl={<Link href={routes.login}>Already registered?</Link>}
+        onSubmit={onSignup}
       >
         <TextField
           variant="outlined"
@@ -27,6 +27,13 @@ export default function View({onInputChange, onLogin}) {
           variant="outlined"
           type="password"
           label="Password"
+          fullWidth
+          onChange={onInputChange}
+        /><hr />
+        <TextField
+          variant="outlined"
+          type="password"
+          label="Password Confirmation"
           fullWidth
           onChange={onInputChange}
         /><hr />
