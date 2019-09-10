@@ -1,20 +1,20 @@
-import React, { Component } from 'react';
-import mobiscroll from "@mobiscroll/react";
-import TasksClick from "./components/TasksClick";
+import React, { Component } from 'react'
+import mobiscroll from "libs/mobiscroll/js/mobiscroll.react.min.js"
+import TasksClick from "./components/TasksClick"
 
-import "@mobiscroll/react/dist/css/mobiscroll.min.css";
+import "libs/mobiscroll/css/mobiscroll.react.min.css"
 
 mobiscroll.settings = {
   theme: 'ios'
-};
+}
 
 export default class DashBroad extends Component {
   constructor(props) {
-    super(props);
+    super(props)
     
     mobiscroll.util.getJson('https://trial.mobiscroll.com/events/', (events) => {
-        this.setState({ myEvents: events});
-    }, 'jsonp');
+        this.setState({ myEvents: events})
+    }, 'jsonp')
 
     this.state = {
       view: 'month',
@@ -23,33 +23,33 @@ export default class DashBroad extends Component {
         calendar: { type: 'month', labels: true },
       },
       height: 490
-    };
+    }
   }
   
   changeView = (event) => {
-    var view;
-    var calHeight;
+    var view
+    var calHeight
     switch (event.target.value) {
       case 'month':
         view = {
           calendar: { type: 'month', labels: true },
-        };
+        }
         calHeight = 490
-        break;
+        break
       case 'week':
         view = {
           calendar: { type: 'week' },
           eventList: { type: 'day' }
-        };
+        }
         calHeight = 70
-        break;
+        break
     }
   
     this.setState({
       view: event.target.value,
       calView: view,
       height: calHeight,
-    });
+    })
   }
   
   render () {
@@ -77,6 +77,6 @@ export default class DashBroad extends Component {
           </div>
         </div>
       </div>
-    );
+    )
   }    
 }
