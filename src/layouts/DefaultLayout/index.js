@@ -12,7 +12,7 @@ const Wrapper = styled.div`
 `
 
 const StyledContainer = styled(Container)`
-  margin-top: 60px;
+  margin-top: 70px;
 `
 
 export default function DefaultLayout({ component: Component, ...restProps }) {
@@ -26,7 +26,7 @@ export default function DefaultLayout({ component: Component, ...restProps }) {
       return (
         <Wrapper>
           <Navigator />
-          <StyledContainer maxWidth="sm">
+          <StyledContainer maxWidth="lg">
             <Component {...props} {...restProps} />
           </StyledContainer>
         </Wrapper>

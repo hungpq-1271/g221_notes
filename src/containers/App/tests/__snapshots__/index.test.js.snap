@@ -1,14 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<App> should render and match the snapshot 1`] = `
-.c2 {
+.c3 {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: inherit;
   cursor: pointer;
 }
 
-.c1 {
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -19,8 +19,12 @@ exports[`<App> should render and match the snapshot 1`] = `
   justify-content: space-between;
 }
 
-.c3 {
+.c4 {
   color: white;
+}
+
+.c1 {
+  background-color: #007bff;
 }
 
 .c0 {
@@ -32,25 +36,25 @@ exports[`<App> should render and match the snapshot 1`] = `
   margin: 0 auto;
 }
 
-.c4 {
-  margin-top: 60px;
+.c5 {
+  margin-top: 70px;
 }
 
 <div
   class="c0"
 >
   <header
-    class="MuiPaper-root MuiPaper-elevation4 MuiAppBar-root MuiAppBar-positionFixed MuiAppBar-colorPrimary mui-fixed"
+    class="MuiPaper-root MuiPaper-elevation4 MuiAppBar-root MuiAppBar-positionFixed c1 MuiAppBar-colorPrimary mui-fixed"
   >
     <div
-      class="MuiToolbar-root MuiToolbar-regular c1 MuiToolbar-gutters"
+      class="MuiToolbar-root MuiToolbar-regular c2 MuiToolbar-gutters"
     >
       <a
-        class="c2"
+        class="c3"
         href="/"
       >
         <button
-          class="MuiButtonBase-root MuiButton-root c3 MuiButton-text"
+          class="MuiButtonBase-root MuiButton-root c4 MuiButton-text"
           tabindex="0"
           type="button"
         >
@@ -68,11 +72,11 @@ exports[`<App> should render and match the snapshot 1`] = `
         class=""
       >
         <a
-          class="c2"
+          class="c3"
           href="/login"
         >
           <button
-            class="MuiButtonBase-root MuiButton-root c3 MuiButton-text"
+            class="MuiButtonBase-root MuiButton-root c4 MuiButton-text"
             tabindex="0"
             type="button"
           >
@@ -87,11 +91,11 @@ exports[`<App> should render and match the snapshot 1`] = `
           </button>
         </a>
         <a
-          class="c2"
+          class="c3"
           href="/signup"
         >
           <button
-            class="MuiButtonBase-root MuiButton-root c3 MuiButton-text"
+            class="MuiButtonBase-root MuiButton-root c4 MuiButton-text"
             tabindex="0"
             type="button"
           >
@@ -109,7 +113,7 @@ exports[`<App> should render and match the snapshot 1`] = `
     </div>
   </header>
   <div
-    class="MuiContainer-root c4 MuiContainer-maxWidthSm"
+    class="MuiContainer-root c5 MuiContainer-maxWidthLg"
   >
     <p>
       Homepage

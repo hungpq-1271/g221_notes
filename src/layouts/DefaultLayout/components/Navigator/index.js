@@ -19,9 +19,17 @@ const StyledButton = styled(Button)`
   color: white;
 `
 
+const StyledAppBar = styled(AppBar)`
+  background-color: #007bff;
+`
+
+const RightButtons = styled.div`
+  grid-column-start: 3;
+`
+
 export default function Navigator() {
   return (
-    <AppBar>
+    <StyledAppBar>
       <StyledToolbar>
         <NonStyleLink to={routes.home}>
           <StyledButton>
@@ -41,6 +49,6 @@ export default function Navigator() {
           </NonStyleLink>
         </ButtonsWrapper>
       </StyledToolbar>
-    </AppBar>
+    </StyledAppBar>
   )
 }
