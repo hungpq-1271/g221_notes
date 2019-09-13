@@ -1,5 +1,6 @@
 import React from 'react'
 
+import Box from '@material-ui/core/Box'
 import Container from '@material-ui/core/Container'
 import Tab from '@material-ui/core/Tab'
 import Tabs from '@material-ui/core/Tabs'
@@ -11,24 +12,30 @@ import TabContent from './components/TabContent'
 
 export default function View({ activeIndex, onChange }) {
   return (
-    <Container maxWidth="md">
-      <div style={{marginTop: 30}}>
+    <StyledContainer maxWidth="md">
+      <div className="spacing-Top">
         <ActionButton />
-        <div style={{display: 'flex', marginTop: 30}}>
+        <Box display="flex" className="spacing-Top">
           <StyledVerticalTabs value={activeIndex} onChange={onChange}>
-            <StyledTab label='ALL' />
-            <StyledTab label='DONE' />
-            <StyledTab label='NOT DONE' />
+            <Tab label="ALL" className="childTab" />
+            <Tab label="DONE" className="childTab" />
+            <Tab label="NOT DONE" className="childTab" />
           </StyledVerticalTabs>
 
           { activeIndex === 0 && <TabContainer><TabContent /></TabContainer> }
-          { activeIndex === 1 && <TabContainer><TabContent /><TabContent /><TabContent /></TabContainer> }
+          { activeIndex === 1 && <TabContainer><TabContent /></TabContainer> }
           { activeIndex === 2 && <TabContainer><TabContent /></TabContainer> }
-        </div>
+        </Box>
       </div>
-    </Container>
+    </StyledContainer>
   )
 }
+
+const StyledContainer = styled(Container)`
+  .spacing-Top {
+    margin-top: 30px;
+  }
+`
 
 const StyledVerticalTabs = styled(Tabs)`
   .MuiTabs-flexContainer {
@@ -37,15 +44,12 @@ const StyledVerticalTabs = styled(Tabs)`
   .MuiTabs-indicator {
     display: none;
   }
-`
-
-const StyledTab = styled(Tab)`
-  .MuiTab-textColorInherit.Mui-selected {
-    outline: none;
-    color: navy;
-    border-bottom: 2px solid navy;
+  .childTab {
+    &:focus {
+      outline: none;
+    }
   }
-  &:focus {
+  .Mui-selected {
     outline: none;
     color: navy;
     border-bottom: 2px solid navy;

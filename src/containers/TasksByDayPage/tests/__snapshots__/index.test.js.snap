@@ -1,18 +1,60 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<TasksByDay /> should render and match the snapshot 1`] = `
+.c1 {
+  margin: 5px;
+}
+
+.c3 {
+  padding: 0 24px 24px;
+  width: 80%;
+}
+
+.c4 {
+  font-size: 30;
+  color: black;
+}
+
+.c5 {
+  margin: 10px;
+}
+
+.c0 .spacing-Top {
+  margin-top: 30px;
+}
+
+.c2 .MuiTabs-flexContainer {
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c2 .MuiTabs-indicator {
+  display: none;
+}
+
+.c2 .childTab:focus {
+  outline: none;
+}
+
+.c2 .Mui-selected {
+  outline: none;
+  color: navy;
+  border-bottom: 2px solid navy;
+}
+
 <div
-  class="MuiContainer-root MuiContainer-maxWidthMd"
+  class="MuiContainer-root c0 MuiContainer-maxWidthMd"
 >
   <div
-    style="margin-top: 30px;"
+    class="spacing-Top"
   >
     <div
-      style="display: flex; flex-direction: row-reverse;"
+      class="MuiBox-root MuiBox-root-9"
     >
       <button
         aria-label="add"
-        class="MuiButtonBase-root MuiFab-root makeStyles-margin-10 MuiFab-extended"
+        class="MuiButtonBase-root MuiFab-root c1 MuiFab-extended"
         tabindex="0"
         type="button"
       >
@@ -38,7 +80,7 @@ exports[`<TasksByDay /> should render and match the snapshot 1`] = `
       </button>
       <button
         aria-label="filter"
-        class="MuiButtonBase-root MuiFab-root makeStyles-margin-10 MuiFab-extended"
+        class="MuiButtonBase-root MuiFab-root c1 MuiFab-extended"
         tabindex="0"
         type="button"
       >
@@ -64,13 +106,13 @@ exports[`<TasksByDay /> should render and match the snapshot 1`] = `
       </button>
     </div>
     <div
-      style="display: flex; margin-top: 30px;"
+      class="MuiBox-root MuiBox-root-32 spacing-Top"
     >
       <div
-        class="MuiTabs-root"
+        class="MuiTabs-root c2"
       >
         <div
-          class="MuiTabs-flexContainer WithStyles(ForwardRef(Tabs))-flexContainer-37"
+          class="MuiTabs-flexContainer"
         >
           <div
             class="MuiTabs-scroller MuiTabs-fixed"
@@ -78,11 +120,11 @@ exports[`<TasksByDay /> should render and match the snapshot 1`] = `
             style="overflow: hidden;"
           >
             <div
-              class="MuiTabs-flexContainer WithStyles(ForwardRef(Tabs))-flexContainer-37"
+              class="MuiTabs-flexContainer"
             >
               <button
                 aria-selected="true"
-                class="MuiButtonBase-root MuiTab-root MuiTab-textColorInherit Mui-selected WithStyles(ForwardRef(Tab))-selected-48"
+                class="MuiButtonBase-root MuiTab-root MuiTab-textColorInherit childTab Mui-selected"
                 role="tab"
                 tabindex="0"
                 type="button"
@@ -98,7 +140,7 @@ exports[`<TasksByDay /> should render and match the snapshot 1`] = `
               </button>
               <button
                 aria-selected="false"
-                class="MuiButtonBase-root MuiTab-root MuiTab-textColorInherit"
+                class="MuiButtonBase-root MuiTab-root MuiTab-textColorInherit childTab"
                 role="tab"
                 tabindex="0"
                 type="button"
@@ -114,7 +156,7 @@ exports[`<TasksByDay /> should render and match the snapshot 1`] = `
               </button>
               <button
                 aria-selected="false"
-                class="MuiButtonBase-root MuiTab-root MuiTab-textColorInherit"
+                class="MuiButtonBase-root MuiTab-root MuiTab-textColorInherit childTab"
                 role="tab"
                 tabindex="0"
                 type="button"
@@ -130,24 +172,23 @@ exports[`<TasksByDay /> should render and match the snapshot 1`] = `
               </button>
             </div>
             <span
-              class="PrivateTabIndicator-root-59 PrivateTabIndicator-colorSecondary-61 MuiTabs-indicator WithStyles(ForwardRef(Tabs))-indicator-38"
+              class="PrivateTabIndicator-root-52 PrivateTabIndicator-colorSecondary-54 MuiTabs-indicator"
               style="left: 0px; width: 0px;"
             />
           </div>
         </div>
       </div>
       <div
-        class="MuiTypography-root MuiTypography-body1"
-        style="padding: 0px 24px 24px 24px; width: 80%;"
+        class="MuiTypography-root c3 MuiTypography-body1"
       >
         <div
-          class="MuiPaper-root MuiPaper-elevation1 MuiCard-root makeStyles-card-8 MuiPaper-rounded"
+          class="MuiPaper-root MuiPaper-elevation1 MuiCard-root MuiPaper-rounded"
         >
           <div
             class="MuiCardContent-root"
           >
             <p
-              class="MuiTypography-root makeStyles-title-9 MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-gutterBottom"
+              class="MuiTypography-root c4 MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-gutterBottom"
             >
               Word of the Day
             </p>
@@ -158,10 +199,10 @@ exports[`<TasksByDay /> should render and match the snapshot 1`] = `
             </p>
           </div>
           <div
-            style="display: flex; flex-direction: row-reverse;"
+            class="MuiBox-root MuiBox-root-114"
           >
             <button
-              class="MuiButtonBase-root MuiButton-root makeStyles-button-11 MuiButton-contained MuiButton-containedPrimary MuiButton-sizeSmall"
+              class="MuiButtonBase-root MuiButton-root c5 MuiButton-contained MuiButton-containedPrimary MuiButton-sizeSmall"
               tabindex="0"
               type="button"
             >
@@ -170,7 +211,7 @@ exports[`<TasksByDay /> should render and match the snapshot 1`] = `
               >
                 <svg
                   aria-hidden="true"
-                  class="MuiSvgIcon-root makeStyles-leftIcon-12"
+                  class="MuiSvgIcon-root"
                   focusable="false"
                   role="presentation"
                   viewBox="0 0 24 24"
@@ -186,7 +227,7 @@ exports[`<TasksByDay /> should render and match the snapshot 1`] = `
               />
             </button>
             <button
-              class="MuiButtonBase-root MuiButton-root makeStyles-button-11 MuiButton-contained MuiButton-sizeSmall"
+              class="MuiButtonBase-root MuiButton-root c5 MuiButton-contained MuiButton-sizeSmall"
               tabindex="0"
               type="button"
             >
@@ -195,7 +236,7 @@ exports[`<TasksByDay /> should render and match the snapshot 1`] = `
               >
                 <svg
                   aria-hidden="true"
-                  class="MuiSvgIcon-root makeStyles-leftIcon-12"
+                  class="MuiSvgIcon-root"
                   focusable="false"
                   role="presentation"
                   viewBox="0 0 24 24"
@@ -211,7 +252,7 @@ exports[`<TasksByDay /> should render and match the snapshot 1`] = `
               />
             </button>
             <button
-              class="MuiButtonBase-root MuiButton-root makeStyles-button-11 MuiButton-contained MuiButton-containedSecondary MuiButton-sizeSmall"
+              class="MuiButtonBase-root MuiButton-root c5 MuiButton-contained MuiButton-containedSecondary MuiButton-sizeSmall"
               tabindex="0"
               type="button"
             >
@@ -220,298 +261,7 @@ exports[`<TasksByDay /> should render and match the snapshot 1`] = `
               >
                 <svg
                   aria-hidden="true"
-                  class="MuiSvgIcon-root makeStyles-leftIcon-12"
-                  focusable="false"
-                  role="presentation"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
-                  />
-                </svg>
-                Delete
-              </span>
-              <span
-                class="MuiTouchRipple-root"
-              />
-            </button>
-          </div>
-        </div>
-        <div
-          class="MuiPaper-root MuiPaper-elevation1 MuiCard-root makeStyles-card-8 MuiPaper-rounded"
-        >
-          <div
-            class="MuiCardContent-root"
-          >
-            <p
-              class="MuiTypography-root makeStyles-title-9 MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-gutterBottom"
-            >
-              Word of the Day
-            </p>
-            <p
-              class="MuiTypography-root MuiTypography-body2"
-            >
-              well meaning and kindly. well meaning and kindly.well meaning and kindly. well meaning and kindly.well meaning and kindly. well meaning and kindly.well meaning and kindly. well meaning and kindly.well meaning and kindly. well meaning and kindly.
-            </p>
-          </div>
-          <div
-            style="display: flex; flex-direction: row-reverse;"
-          >
-            <button
-              class="MuiButtonBase-root MuiButton-root makeStyles-button-11 MuiButton-contained MuiButton-containedPrimary MuiButton-sizeSmall"
-              tabindex="0"
-              type="button"
-            >
-              <span
-                class="MuiButton-label"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="MuiSvgIcon-root makeStyles-leftIcon-12"
-                  focusable="false"
-                  role="presentation"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"
-                  />
-                </svg>
-                Done
-              </span>
-              <span
-                class="MuiTouchRipple-root"
-              />
-            </button>
-            <button
-              class="MuiButtonBase-root MuiButton-root makeStyles-button-11 MuiButton-contained MuiButton-sizeSmall"
-              tabindex="0"
-              type="button"
-            >
-              <span
-                class="MuiButton-label"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="MuiSvgIcon-root makeStyles-leftIcon-12"
-                  focusable="false"
-                  role="presentation"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34a.9959.9959 0 00-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"
-                  />
-                </svg>
-                Edit
-              </span>
-              <span
-                class="MuiTouchRipple-root"
-              />
-            </button>
-            <button
-              class="MuiButtonBase-root MuiButton-root makeStyles-button-11 MuiButton-contained MuiButton-containedSecondary MuiButton-sizeSmall"
-              tabindex="0"
-              type="button"
-            >
-              <span
-                class="MuiButton-label"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="MuiSvgIcon-root makeStyles-leftIcon-12"
-                  focusable="false"
-                  role="presentation"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
-                  />
-                </svg>
-                Delete
-              </span>
-              <span
-                class="MuiTouchRipple-root"
-              />
-            </button>
-          </div>
-        </div>
-        <div
-          class="MuiPaper-root MuiPaper-elevation1 MuiCard-root makeStyles-card-8 MuiPaper-rounded"
-        >
-          <div
-            class="MuiCardContent-root"
-          >
-            <p
-              class="MuiTypography-root makeStyles-title-9 MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-gutterBottom"
-            >
-              Word of the Day
-            </p>
-            <p
-              class="MuiTypography-root MuiTypography-body2"
-            >
-              well meaning and kindly. well meaning and kindly.well meaning and kindly. well meaning and kindly.well meaning and kindly. well meaning and kindly.well meaning and kindly. well meaning and kindly.well meaning and kindly. well meaning and kindly.
-            </p>
-          </div>
-          <div
-            style="display: flex; flex-direction: row-reverse;"
-          >
-            <button
-              class="MuiButtonBase-root MuiButton-root makeStyles-button-11 MuiButton-contained MuiButton-containedPrimary MuiButton-sizeSmall"
-              tabindex="0"
-              type="button"
-            >
-              <span
-                class="MuiButton-label"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="MuiSvgIcon-root makeStyles-leftIcon-12"
-                  focusable="false"
-                  role="presentation"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"
-                  />
-                </svg>
-                Done
-              </span>
-              <span
-                class="MuiTouchRipple-root"
-              />
-            </button>
-            <button
-              class="MuiButtonBase-root MuiButton-root makeStyles-button-11 MuiButton-contained MuiButton-sizeSmall"
-              tabindex="0"
-              type="button"
-            >
-              <span
-                class="MuiButton-label"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="MuiSvgIcon-root makeStyles-leftIcon-12"
-                  focusable="false"
-                  role="presentation"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34a.9959.9959 0 00-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"
-                  />
-                </svg>
-                Edit
-              </span>
-              <span
-                class="MuiTouchRipple-root"
-              />
-            </button>
-            <button
-              class="MuiButtonBase-root MuiButton-root makeStyles-button-11 MuiButton-contained MuiButton-containedSecondary MuiButton-sizeSmall"
-              tabindex="0"
-              type="button"
-            >
-              <span
-                class="MuiButton-label"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="MuiSvgIcon-root makeStyles-leftIcon-12"
-                  focusable="false"
-                  role="presentation"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
-                  />
-                </svg>
-                Delete
-              </span>
-              <span
-                class="MuiTouchRipple-root"
-              />
-            </button>
-          </div>
-        </div>
-        <div
-          class="MuiPaper-root MuiPaper-elevation1 MuiCard-root makeStyles-card-8 MuiPaper-rounded"
-        >
-          <div
-            class="MuiCardContent-root"
-          >
-            <p
-              class="MuiTypography-root makeStyles-title-9 MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-gutterBottom"
-            >
-              Word of the Day
-            </p>
-            <p
-              class="MuiTypography-root MuiTypography-body2"
-            >
-              well meaning and kindly. well meaning and kindly.well meaning and kindly. well meaning and kindly.well meaning and kindly. well meaning and kindly.well meaning and kindly. well meaning and kindly.well meaning and kindly. well meaning and kindly.
-            </p>
-          </div>
-          <div
-            style="display: flex; flex-direction: row-reverse;"
-          >
-            <button
-              class="MuiButtonBase-root MuiButton-root makeStyles-button-11 MuiButton-contained MuiButton-containedPrimary MuiButton-sizeSmall"
-              tabindex="0"
-              type="button"
-            >
-              <span
-                class="MuiButton-label"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="MuiSvgIcon-root makeStyles-leftIcon-12"
-                  focusable="false"
-                  role="presentation"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"
-                  />
-                </svg>
-                Done
-              </span>
-              <span
-                class="MuiTouchRipple-root"
-              />
-            </button>
-            <button
-              class="MuiButtonBase-root MuiButton-root makeStyles-button-11 MuiButton-contained MuiButton-sizeSmall"
-              tabindex="0"
-              type="button"
-            >
-              <span
-                class="MuiButton-label"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="MuiSvgIcon-root makeStyles-leftIcon-12"
-                  focusable="false"
-                  role="presentation"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34a.9959.9959 0 00-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"
-                  />
-                </svg>
-                Edit
-              </span>
-              <span
-                class="MuiTouchRipple-root"
-              />
-            </button>
-            <button
-              class="MuiButtonBase-root MuiButton-root makeStyles-button-11 MuiButton-contained MuiButton-containedSecondary MuiButton-sizeSmall"
-              tabindex="0"
-              type="button"
-            >
-              <span
-                class="MuiButton-label"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="MuiSvgIcon-root makeStyles-leftIcon-12"
+                  class="MuiSvgIcon-root"
                   focusable="false"
                   role="presentation"
                   viewBox="0 0 24 24"

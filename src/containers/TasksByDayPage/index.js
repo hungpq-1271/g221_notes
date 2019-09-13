@@ -13,7 +13,7 @@ export default class TasksByDay extends React.Component {
   handleChange = (_, activeIndex) => this.setState({ activeIndex })
 
   render() {
-    const { activeIndex } = this.state;
+    const { activeIndex } = this.state
     return <View
       activeIndex={activeIndex}
       onChange={this.handleChange}

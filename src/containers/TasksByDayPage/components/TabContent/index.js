@@ -1,5 +1,6 @@
 import React from 'react'
 
+import Box from '@material-ui/core/Box'
 import Button from '@material-ui/core/Button'
 import Card from '@material-ui/core/Card'
 import CardContent from '@material-ui/core/CardContent'
@@ -20,7 +21,7 @@ export default function TabContent() {
           well meaning and kindly. well meaning and kindly.well meaning and kindly. well meaning and kindly.well meaning and kindly. well meaning and kindly.well meaning and kindly. well meaning and kindly.well meaning and kindly. well meaning and kindly.
         </Typography>
       </CardContent>
-      <div style={{ display: "flex", flexDirection: "row-reverse" }}>
+      <Box display="flex" flexDirection="row-reverse">
         <StyledButton variant="contained" color="primary" size="small">
           <DoneIcon />
           Done
@@ -33,16 +34,16 @@ export default function TabContent() {
           <DeleteIcon />
           Delete
         </StyledButton>
-      </div>
+      </Box>
     </Card>
   )
 }
 
 const StyledTypography = styled(Typography)`
-  fontSize: 20;
-  fontWeight: bold;
+  font-size: 30;
+  color: black;
 `
 
 const StyledButton = styled(Button)`
-  margin: 10;
+  margin: 10px;
 `
